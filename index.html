@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="PBcX7ekJW3mHqFLUbB2QkhmWMXCunsWgPKQE2LaMj4w" />
+     <meta name="google-site-verification" content="PBcX7ekJW3mHqFLUbB2QkhmWMXCunsWgPKQE2LaMj4w" />
       <!-- ✅ FAVICON - AGREGA ESTO: -->
-    <link rel="icon" type="image/png" href="icon.png">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" type="image/png" href="/icon.png">
+    <link rel="apple-touch-icon" href="/icon.png">
     <!-- 1. ESTO ES LO QUE GOOGLE MUESTRA EN LOS RESULTADOS -->
-    <title>SRT Fairs – San Jose | Feria Internacional de Posgrados</title>
-    <meta name="description" content="Conecta con las mejores universidades del mundo en la Feria Internacional de Posgrados en Costa Rica. Evento gratuito 2026.">
+    <title>SRT Fairs – Guatemala 2026 | Feria Internacional de Posgrados</title>
+    <meta name="description" content="Conecta con las mejores universidades del mundo en la Feria Internacional de Posgrados en Guatemala. Evento gratuito 2026.">
     
     <!-- 2. ESTO EVITA QUE GOOGLE INDEXE BASURA SI HAY UN ERROR MENOR -->
     <meta name="robots" content="index, follow">
@@ -549,101 +549,16 @@ section { padding: 100px 60px; width: 100%; }
   overflow: hidden;
 }
 
-/* Video Placeholder Link */
-.video-placeholder {
+/* Video en autoplay */
+.event-video-player {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.video-placeholder:hover {
-  transform: scale(1.02);
-  box-shadow: 0 25px 70px rgba(31, 173, 110, 0.3);
-}
-
-/* Thumbnail Image */
-.video-thumbnail {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.video-thumbnail img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-}
-
-/* Dark Overlay */
-.video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(10, 22, 40, 0.4), rgba(10, 22, 40, 0.7));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  transition: all 0.3s ease;
-}
-
-.video-placeholder:hover .video-overlay {
-  background: linear-gradient(to bottom, rgba(10, 22, 40, 0.3), rgba(10, 22, 40, 0.6));
-}
-
-/* Play Icon */
-.play-icon {
-  font-size: 80px;
-  color: white;
-  animation: pulse 2s ease-in-out infinite;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
-  transition: all 0.3s ease;
-}
-
-.video-placeholder:hover .play-icon {
-  transform: scale(1.1);
-  color: var(--green-light);
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 0.9; }
-  50% { transform: scale(1.1); opacity: 1; }
-}
-
-/* Video Content */
-.video-content {
-  text-align: center;
-  color: white;
-  padding: 0 20px;
-}
-
-.video-content h3 {
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0 0 8px 0;
-  color: white;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-.video-content p {
-  font-size: 15px;
-  margin: 0;
-  opacity: 0.95;
-  font-weight: 500;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  border: none;
+  background: var(--navy);
 }
 
 /* Event Details */
@@ -1739,13 +1654,14 @@ footer::after {
 </style>
 </head>
 <body>
+
 <!-- NAV -->
 <header class="site-header" id="navbar">
   <div class="site-header-inner">
     <a href="#home" class="site-logo">
       <img src="Group 142.png" alt="SRT CONNECTED" loading="lazy" decoding="async">
     </a>
-    <a href="#registro" class="site-header-cta">Obtén tu acceso gratuito</a>
+    <a href="#registro" class="site-header-cta">Inscripción gratuita al evento</a>
   </div>
 </header>
 
@@ -1762,7 +1678,7 @@ footer::after {
   
   <!-- Imagen Mobile -->
   <div class="hero-bg-image hero-bg-mobile">
-    <img src="HERO-800-X-11200-COSTA-RICA.png" 
+    <img src="HERO-800-X-11200-GUATEMALA.png" 
          alt="Event background mobile" 
          loading="eager" 
          fetchpriority="high"
@@ -1776,17 +1692,17 @@ footer::after {
   <div class="hero-content">
     <div class="hero-text-group">
       <p class="hero-eyebrow">FERIA INTERNACIONAL DE POSGRADOS UNIVERSITARIOS</p>
-      <h1 class="hero-title">San José, Costa Rica,</h1>
-       <h1 class="hero-title">3 de Octubre 2026</h1>
-      <h2 class="hero-location">¿Buscas impulsar tu futuro con una maestría en el extranjero?</h2>
+      <h1 class="hero-title">Ciudad de Guatemala,</h1>
+       <h1 class="hero-title">Lunes 5 de octubre de 2026</h1>
+      <h2 class="hero-location">¿Buscando conocer todo acerca de realizar una maestría en el extranjero?</h2>
       <ul class="hero-features">
-        <li><i class="fa-solid fa-check-circle"></i> 5 horas completas de aprendizajes y conexiones</li>
-        <li><i class="fa-solid fa-check-circle"></i> Más de 30 universidades internacionales</li>
-        <li><i class="fa-solid fa-check-circle"></i> Espacio para aclarar dudas, comparar y descubrir múltiples opciones</li>
+        <li><i class="fa-solid fa-check-circle"></i> Media tarde llena de aprendizajes y conexiones</li>
+        <li><i class="fa-solid fa-check-circle"></i> Más de 30 universidades de todo el mundo</li>
+        <li><i class="fa-solid fa-check-circle"></i> Un espacio para aclarar dudas, comparar y descubrir una amplia variedad de opciones</li>
       </ul>
       <div class="hero-actions">
         <a href="#registro" class="btn-primary">
-          Entrada gratis - Cupos limitados
+          Inscripción gratuita • Cupos limitados
         </a>
       </div>
     </div>
@@ -1794,32 +1710,36 @@ footer::after {
 </section>
 
 <!-- EVENT INFO -->
+<!-- EVENT INFO -->
 <section class="event-info" id="evento">
   <div class="event-info-grid">
     <div class="event-video reveal">
       <div class="video-wrapper">
-        <a href="https://www.youtube.com/watch?v=v07kptdZToY" target="_blank" class="video-placeholder">
-          <div class="video-thumbnail">
-            <img src="IMAGEN-1.png" alt="San José">
-          </div>
-          <div class="video-overlay">
-            <i class="fa-brands fa-youtube play-icon"></i>
-            <div class="video-content">
-              <h3>Ver video del evento</h3>
-              <p>Click para ver en YouTube</p>
-            </div>
-          </div>
-        </a>
+        
+        <!-- Video en autoplay: los navegadores bloquean el audio automático sin interacción previa del usuario, así que cae a silenciado y se activa el sonido con la primera interacción en la página -->
+        <video
+          class="event-video-player"
+          poster="https://img.youtube.com/vi/KQfVYXytHdc/maxresdefault.jpg"
+          autoplay
+          loop
+          playsinline
+          controls
+          preload="metadata">
+          <source src="https://file.garden/aicj-LWBZTmGA5zi/video_01c0764d87cb.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+        
       </div>
     </div>
+    
     <div class="event-detail-list">
       <div class="event-detail-row reveal">
         <div class="event-detail-icon">
           <i class="fa-solid fa-calendar-days"></i>
         </div>
         <div>
-          <h4>Sábado, 3 de Octubre de 2026</h4>
-          <p>16:30h - 19:30h</p>
+          <h4>Lunes, 5 de Octubre de 2026</h4>
+          <p>17:00h - 19:30h</p>
         </div>
       </div>
       <div class="event-detail-row reveal">
@@ -1827,8 +1747,8 @@ footer::after {
           <i class="fa-solid fa-qrcode"></i>
         </div>
         <div>
-          <h4>Entrada gratuita</h4>
-          <p>Presenta el código QR para el ingreso</p>
+          <h4>Ingreso gratuito</h4>
+          <p>Se deberá presentar el código QR para el acceso</p>
         </div>
       </div>
       <div class="event-detail-row reveal">
@@ -1836,8 +1756,8 @@ footer::after {
           <i class="fa-solid fa-location-dot"></i>
         </div>
         <div>
-          <h4>Texas Tech University - Costa Rica</h4>
-          <p>Avenida Escazú, Edificio AE205, San José</p>
+          <h4>Hotel Barceló Ciudad de Guatemala</h4>
+          <p>7A Avenida 15-45, Cdad. de Guatemala 01009, Guatemala</p>
         </div>
       </div>
     </div>
@@ -1849,8 +1769,8 @@ footer::after {
   <div class="register-grid">
     <div class="register-left reveal">
       <div class="register-card">
-        <h3>Oportunidad única para conocer más de <span>30 universidades</span> de todo el mundo</h3>
-        <p>Completa el formulario para recibir el código QR de acceso gratuito</p>
+        <h3>Una oportunidad para conocer más de <span>30 universidades</span> de todo el mundo</h3>
+        <p>Al completar el formulario, se enviará el código QR para el ingreso gratuito</p>
       </div>
       <div class="register-images">
         <div class="register-img-top">
@@ -1869,8 +1789,8 @@ footer::after {
         <img src="LOGO-ORIGINAL.png" alt="SRT CONNECTED" style="height:64px; object-fit:contain;" loading="lazy" decoding="async">
       </div>
       <div class="register-form-header">
-        <h3>Inscripción en la Feria Internacional de Postgrados SRT</h3>
-        <p>Para garantizar una excelente experiencia durante el evento, se solicita completar los datos detalladamente. El proceso toma solo unos minutos.</p>
+        <h3>Inscríbete en la Feria Internacional de Postgrados SRT</h3>
+        <p>Para asegurarte la mejor experiencia durante el evento, te pedimos que completes tus datos detalladamente. ¡El proceso te tomará solo unos minutos!</p>
       </div>
 
       <div class="form-row">
@@ -1980,7 +1900,7 @@ FIN DE SECCIÓN OCULTA
 <!-- ÁREAS ACADÉMICAS -->
 <section class="academic-areas">
   <div style="text-align:center; max-width:720px; margin:0 auto;" class="reveal">
-    <h2 class="section-title">...con opciones disponibles en <span>todas las áreas del conocimiento</span></h2>
+    <h2 class="section-title">¡...y en todas las <span>áreas académicas</span> que te puedas imaginar!</h2>
   </div>
   <div class="areas-grid">
     <div class="area-card">
@@ -2009,18 +1929,18 @@ FIN DE SECCIÓN OCULTA
 <!-- PROCESO DE REGISTRO -->
 <section class="process">
   <div style="max-width:640px; margin:0 auto; text-align:center;" class="reveal">
-    <h2 class="section-title">¿Qué sucede tras <span>completar el registro?</span></h2>
+    <h2 class="section-title">¿Qué pasa una vez que <span>te registras?</span></h2>
   </div>
   <div class="process-grid">
     <div class="reveal">
       <div class="process-notes">
         <div class="process-note">
           <h4>Cupos limitados</h4>
-          <p>El registro exitoso asegura la postulación, pero el ingreso al salón estará sujeto a la capacidad del lugar. Se recomienda asistir con anticipación.</p>
+          <p>Tu registro exitoso asegura tu postulación, pero el ingreso al salón estará sujeto a la capacidad del lugar. ¡Te recomendamos llegar temprano!</p>
         </div>
         <div class="process-note">
-          <h4>Acceso obligatorio con tu QR personal</h4>
-          <p>Para ingresar al evento, se deberá presentar en la entrada el código QR personal (de forma digital en el celular o impreso).</p>
+          <h4>Acceso obligatorio con tu QR</h4>
+          <p>Para entrar al evento, deberás presentar en la entrada el código QR personal (de forma digital en tu celular o impreso).</p>
         </div>
       </div>
       <div class="process-img">
@@ -2031,19 +1951,19 @@ FIN DE SECCIÓN OCULTA
     <div class="process-steps reveal">
       <div class="step-card">
         <div class="step-icon"><i class="fa-solid fa-envelope"></i></div>
-        <p>Envío de confirmación por correo electrónico.</p>
+        <p>Recibirás tu confirmación por correo electrónico.</p>
       </div>
       <div class="step-card">
         <div class="step-icon"><i class="fa-solid fa-qrcode"></i></div>
-        <p>En pocos minutos se enviará el código QR personal.</p>
+        <p>En unos minutos te enviaremos tu código QR personal.</p>
       </div>
       <div class="step-card">
         <div class="step-icon"><i class="fa-solid fa-calendar-check"></i></div>
-        <p>Se recomienda incorporar la fecha en tu calendario y permanecer atento a las novedades del evento.</p>
+        <p>Agenda la fecha en tu calendario y mantente atento a las novedades.</p>
       </div>
       <div class="step-card">
         <div class="step-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-        <p>Presenta tu código QR en la entrada y descubre las próximas oportunidades académicas.</p>
+        <p>¡Muestra tu QR en la entrada y descubre tu próxima aventura académica!</p>
       </div>
     </div>
   </div>
@@ -2052,33 +1972,32 @@ FIN DE SECCIÓN OCULTA
 <!-- TODO LO QUE PODRÁS HACER -->
 <section class="experience">
   <div style="max-width:640px; margin:0 auto; text-align:center;" class="reveal">
-    <h2 class="section-title">Beneficios y actividades en <span>SRT ConnectED San José:</span></h2>
+    <h2 class="section-title">Todo lo que podrás hacer en <span>SRT ConnectED Guatemala:</span></h2>
   </div>
   <div class="experience-grid">
     <div class="experience-card">
       <div class="experience-card-img"><img src="IMAGEN-CUADRO-CON-TEXTO-1.png" alt="Conversar con directores de admisión" loading="lazy" decoding="async"></div>
-      <p>Interactuar directamente con representantes y directores de admisión de las mejores universidades del mundo.</p>
+      <p>Conversar directamente con los directores de admisión de las mejores universidades del mundo.</p>
     </div>
     <div class="experience-card">
-      <div class="experience-card-img"><img src="IMAGEN-CUADRO-CON-TEXTO-2.png" alt="Aclarar dudas sobre becas" loading="lazy" decoding="async"></div>
-      <p>Aclarar dudas sobre becas, requisitos de postulación y opciones de financiamiento.</p>
+      <div class="experience-card-img"><img src="IMAGEN-CUADRO-CON-TEXTO-2.png" alt="Resolver dudas sobre becas" loading="lazy" decoding="async"></div>
+      <p>Resuelve todas tus dudas sobre becas, requisitos de postulación y opciones de financiamiento.</p>
     </div>
     <div class="experience-card">
       <div class="experience-card-img"><img src="IMAGEN-CUADRO-CON-TEXTO-3.png" alt="Asesoría especializada" loading="lazy" decoding="async"></div>
-      <p>Recibir asesoría especializada para estructurar el plan de estudios en el extranjero.</p>
+      <p>Recibe asesoría especializada para armar tu plan de estudios en el extranjero.</p>
     </div>
     <div class="experience-card">
-      <div class="experience-card-img"><img src="IMAGEN-CUADRO-CON-TEXTO-4.png" alt="Conectar con otros profesionales" loading="lazy" decoding="async"></div>
-      <p>Conectar con otros profesionales y perfiles enfocados en el crecimiento global.</p>
+      <div class="experience-card-img"><img src="IMAGEN-CUADRO-CON-TEXTO-4.png" alt="Conectar con otros estudiantes" loading="lazy" decoding="async"></div>
+      <p>Conecta con otros profesionales y estudiantes que están en tu misma sintonía.</p>
     </div>
   </div>
   <div class="experience-cta reveal">
-    <a href="#registro" class="btn-primary">¡Quiero Asistir! <i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#registro" class="btn-primary">Asegura tu lugar aquí <i class="fa-solid fa-arrow-right"></i></a>
   </div>
 </section>
 
 <!-- RESUELVE TUS DUDAS -->
-<!-- ⚠️ Lista completa no visible en las capturas de Costa Rica (solo se ve "Programas y opciones de estudio"), se mantiene el original. -->
 <section class="faq-check">
   <div class="faq-check-grid">
     <div class="faq-check-img reveal">
@@ -2089,13 +2008,13 @@ FIN DE SECCIÓN OCULTA
       <div class="section-tag">Asesoría integral</div>
       <h2 class="section-title">Resuelve todas tus dudas sobre...</h2>
       <ul class="faq-check-list">
-        <li><i class="fa-solid fa-circle-check"></i> Programas y opciones de estudio</li>
-        <li><i class="fa-solid fa-circle-check"></i> Plazos de postulación</li>
-        <li><i class="fa-solid fa-circle-check"></i> Convalidación y certificación de títulos</li>
-        <li><i class="fa-solid fa-circle-check"></i> Cómo postular a la visa correcta</li>
-        <li><i class="fa-solid fa-circle-check"></i> Requisitos de admisión</li>
-        <li><i class="fa-solid fa-circle-check"></i> Becas y opciones de financiamiento</li>
-        <li><i class="fa-solid fa-circle-check"></i> Cómo es vivir y mudarse a otro país</li>
+        <li><i class="fa-solid fa-circle-check"></i> <strong>Programas y opciones de estudio:</strong> Encuentra la maestría ideal para tus metas.</li>
+        <li><i class="fa-solid fa-circle-check"></i> <strong>Requisitos y Plazos de postulación:</strong> Prepárate a tiempo y sin contratiempos.</li>
+        <li><i class="fa-solid fa-circle-check"></i> <strong>Becas y opciones de financiamiento:</strong> Descubre cómo impulsar tu proyecto académico.</li>
+        <li><i class="fa-solid fa-circle-check"></i> <strong>Procesos de visa:</strong> Conoce los pasos para postular a la visa correcta según tu destino.</li>
+        <li><i class="fa-solid fa-circle-check"></i> <strong>Convalidación y certificación:</strong> Todo sobre la validez de tus títulos en el extranjero.</li>
+        <li><i class="fa-solid fa-circle-check"></i> <strong>Oportunidades laborales:</strong> Potencia tu desarrollo profesional y el crecimiento de tu carrera.</li>
+        <li><i class="fa-solid fa-circle-check"></i> <strong>Estilo de vida:</strong> Descubre cómo es la experiencia de vivir y mudarte a otro país.</li>
       </ul>
     </div>
   </div>
@@ -2178,35 +2097,33 @@ FIN DE SECCIÓN OCULTA
   </div>
   <div class="closing-grid">
     <div class="closing-text reveal">
-      <h2>¡Nos vemos muy pronto, <span>Costa Rica!</span></h2>
+      <h2>¡Nos vemos muy pronto, <span>Guatemala!</span></h2>
       <div class="event-detail-row" style="margin-bottom:20px">
         <div class="event-detail-icon"><i class="fa-solid fa-calendar-days"></i></div>
         <div>
-          <h4>Sábado, 3 de Octubre de 2026</h4>
-          <p>10:00h - 14:00h</p>
+          <h4>Lunes, 5 de Octubre de 2026</h4>
+          <p>5:00pm - 7:30pm</p>
         </div>
       </div>
       <div class="event-detail-row" style="margin-bottom:28px">
         <div class="event-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
         <div>
-          <h4>Texas Tech University - Costa Rica</h4>
-          <p>Avenida Escazú, Edificio AE205, San José</p>
+          <h4>Hotel Barceló Ciudad de Guatemala</h4>
+          <p>7A Avenida 15-45, Cdad. de Guatemala 01009, Guatemala</p>
         </div>
       </div>
       <a href="#registro" class="btn-primary">Registrarse gratis <i class="fa-solid fa-arrow-right"></i></a>
     </div>
     <div class="closing-map reveal">
-      <iframe src="https://maps.google.com/maps?q=Texas%20Tech%20University%20Costa%20Rica%2C%20Avenida%20Escaz%C3%BA%2C%20Edificio%20AE205%2C%20San%20Jos%C3%A9&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+      <iframe src="https://maps.google.com/maps?q=Hotel%20Barcelo%20Ciudad%20de%20Guatemala%2C%207A%20Avenida%2015-45%2C%20Guatemala%20City&t=&z=15&ie=UTF8&iwloc=&output=embed" 
               loading="lazy" 
               referrerpolicy="no-referrer-when-downgrade" 
-              title="Ubicación Texas Tech University - Costa Rica"
+              title="Ubicación Hotel Barceló Ciudad de Guatemala"
               sandbox="allow-scripts allow-same-origin allow-popups"
               fetchpriority="low"></iframe>
     </div>
   </div>
 </section>
-</body>
-</html>
 
 
 <script>
@@ -2258,7 +2175,7 @@ FIN DE SECCIÓN OCULTA
 <footer>
   <div class="footer-content">
     <div class="footer-logo-wrapper">
-      <img src="LOGO-ORIGINAL-EN-BLANCO.png" alt="SRT Fairs" class="footer-logo" 
+      <img src="LOGO-ORIGINAL.png" alt="SRT Fairs" class="footer-logo" 
            loading="lazy" decoding="async"
            onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
       <span style="display:none; font-family:'Fraunces',serif; font-size:24px; font-weight:800; color:white;">
